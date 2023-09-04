@@ -12,6 +12,6 @@ This website is built using the Software Development Life Cycle Waterfall method
 1. Download via Zip -> extract all <br>
 ```bash
 2. composer install
-3. php artisan migrate:fresh --seed <br>
+3. php artisan migrate:fresh --seed 
 4. php artisan serve
 ```
