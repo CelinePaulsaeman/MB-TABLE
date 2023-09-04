@@ -9,7 +9,7 @@ This website is built using the Software Development Life Cycle Waterfall method
 - Timothy Darren
 
 ## Installation
-1. Download via Zip -> extract all <br>
+1. Download via Zip -> extract all
 ```bash
 2. composer install
 3. php artisan migrate:fresh --seed 
