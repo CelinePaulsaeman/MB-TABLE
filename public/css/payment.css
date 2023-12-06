@@ -24,13 +24,15 @@ body{
     line-height: 1.5;
 }
 .card-wrapper{
-    max-width: 1100px;
-    margin: 0 auto;
+    padding: 5%;
+    padding-bottom: 0;
 }
+
 img{
     width: 100%;
     display: block;
 }
+
 .img-display{
     overflow: hidden;
     height: 100%;
@@ -46,8 +48,12 @@ img{
 }
 
 .product-content{
-    padding: 2rem 1rem;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
 }
+
 .product-title{
     font-size: 2.5rem;
     text-transform: capitalize;
@@ -106,7 +112,7 @@ img{
 .total-price table{
     border-top: 3px solid #5995fd;
     width: 100%;
-    max-width: 350px;
+    /* max-width: 350px; */
 }
 
 td{
@@ -130,7 +136,6 @@ td:first-child{
     margin-top: 3%;
     margin-right: 5%;
     width: 280px;
-    height: 27vh;
 }
 .select-menu span{
     font-size: 1.5rem;
@@ -209,6 +214,7 @@ td:first-child{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 90%;
     }
     .product-content{
         padding-top: 0;

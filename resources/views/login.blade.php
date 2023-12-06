@@ -88,9 +88,8 @@
               <p>
                 Hello There! If you don't have an account, click the register button to register
               </p>
-              <button class="btn transparent" id="sign-up-btn">
-                Sign up
-              </button>
+              <button class="btn transparent" id="sign-up-btn">Sign up</button>
+              <button class="btn transparent" id="sign-up-btn" style="margin-left:20px;"><a href="/" style="text-decoration:none; color:white;">Back</a></button>
             </div>
           </div>
           <div class="panel right-panel">
@@ -99,9 +98,8 @@
               <p>
                 Welcome Back! If you already have an account, click the sign in button to login
               </p>
-              <button class="btn transparent" id="sign-in-btn">
-                Sign in
-              </button>
+              <button class="btn transparent" id="sign-in-btn">Sign in</button>
+              <button class="btn transparent" id="sign-up-btn" style="margin-left:20px;"><a href="/" style="text-decoration:none; color:white;">Back</a></button>
             </div>
           </div>
         </div>

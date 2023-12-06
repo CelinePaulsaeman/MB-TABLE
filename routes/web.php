@@ -17,13 +17,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Go login page
-Route::get('/', [UserController::class, 'showLoginPage']);
+Route::get('/login', [UserController::class, 'showLoginPage']);
 // User login
 Route::post('/signIn', [UserController::class, 'signin']);
 // User signout
 Route::get('/signOut', [UserController::class, 'signout']);
 // Go to home
-Route::get('/home', [BilliardController::class, 'showHomePage']);
+Route::get('/', [BilliardController::class, 'showHomePage']);
 // Go to About Us
 Route::get('/aboutUs', [UserController::class, 'showAboutUsPage']);
 // User register

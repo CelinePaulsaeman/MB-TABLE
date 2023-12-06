@@ -38,14 +38,14 @@ class UserController extends Controller
         }
 
         if (Auth::attempt($userCredential, $remember)) {
-            return redirect('home');
+            return redirect('/');
         }else{
             if(User::where('username', $request['username'])->exists()){
                 $errors = ['Incorrect password'];
-                return redirect('/')->withErrors($errors);
+                return redirect('/login')->withErrors($errors);
             }else{
                 $errors = ['Username is not registered!'];
-                return redirect('/')->withErrors($errors);
+                return redirect('/login')->withErrors($errors);
             }
         }
     }
@@ -76,7 +76,7 @@ class UserController extends Controller
         ];
 
         if (Auth::attempt($userCredential)) {
-            return redirect('home');
+            return redirect('/');
         }
     }
 

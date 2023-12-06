@@ -16,15 +16,18 @@
         <a href="/home" class="logo"><span>MB</span>-TABLE</a>
 
         <nav class="navbar">
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
             <a href="/aboutUs">About Us</a>
             <a href="#history">History</a>
         </nav>
 
         <div class="icons">
             <i class="fas fa-search" id="search-btn"></i>
+            @if (Auth::check())
             <a href="/profile"><i class="fas fa-user" id="profile-btn"></i></a>
-
+            @else
+            <button class="btn2"><a href="/login">Login</a></button>
+            @endif
         </div>
 
         <form action="/searchBilliard" method="POST" class="search-bar-container">
