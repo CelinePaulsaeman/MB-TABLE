@@ -15,6 +15,7 @@ This website is built using the Software Development Life Cycle Waterfall method
 4. Type this in terminal:
 ```bash
 1. composer install
-2. php artisan migrate:fresh --seed 
-3. php artisan serve
+2. php artisan storage:link
+3. php artisan migrate:fresh --seed 
+4. php artisan serve
 ```
