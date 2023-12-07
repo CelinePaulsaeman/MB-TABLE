@@ -18,7 +18,9 @@
         <nav class="navbar">
             <a href="/">Home</a>
             <a href="/aboutUs">About Us</a>
-            <a href="#history">History</a>
+            @if (Auth::check())
+            <a href="/history">History</a>
+            @endif
         </nav>
 
         <div class="icons">
@@ -26,7 +28,7 @@
             @if (Auth::check())
             <a href="/profile"><i class="fas fa-user" id="profile-btn"></i></a>
             @else
-            <button class="btn2"><a href="/login">Login</a></button>
+            <a class="btn2" href="/login">Login</a>
             @endif
         </div>
 

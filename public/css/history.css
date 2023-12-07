@@ -4,16 +4,19 @@
     margin: 100px;
     border-radius: 10px;
     background: white;
-    box-shadow: 3px 5px 15px #333;
+    box-shadow: 2px 4px 10px #333;
+    position: relative;
 }
 .card:hover {
     transform: scale(1.03);
-    box-shadow: 5px 5px 15px #333;
+    box-shadow: 1px 1px 3px #333;
 }
 .text{
     padding:5%;
     width: 40vw;
 }
+
+
 .text p {
     color: #333;
     font-size:15px;
@@ -26,9 +29,23 @@
     color: #C87E4F;
     font-size:13px;font-size:13px;
 }
+.image{
+    max-width: 30%;
+    height: 100%;
+}
 .price{
     font-size:20px;
     margin-right: 40px;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
 }
 img{
     max-width: 100%;
@@ -46,7 +63,12 @@ img{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
+    border: rgb(9, 134, 224) 2px solid;
+    justify-content: flex-end;
+    float: right;
 }
+
 .detail:hover {
-    color: #333;
+    background-color: white;
+    color: rgb(9, 134, 224);
 }

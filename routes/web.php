@@ -24,8 +24,12 @@ Route::post('/signIn', [UserController::class, 'signin']);
 Route::get('/signOut', [UserController::class, 'signout']);
 // Go to home
 Route::get('/', [BilliardController::class, 'showHomePage']);
+// Go to history
+Route::get('/history', [UserController::class, 'showHistoryPage']);
 // Go to About Us
 Route::get('/aboutUs', [UserController::class, 'showAboutUsPage']);
+// Go to History detail
+Route::get('/historydetail', [UserController::class, 'showhistorydetailPage']);
 // User register
 Route::post('/signUp', [UserController::class, 'signup']);
 // Search Billiard

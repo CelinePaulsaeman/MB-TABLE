@@ -118,18 +118,10 @@ header .search-bar-container label:hover{
     margin-right: 5px;
 }
 
-.btn2 a{
-    text-decoration: none;
-    color: white;
-}
-
-.btn2 a:hover{
-    color: #333;
-}
-
 .btn2:hover{
     background: white;
     border: #333 2px solid;
+    color: #333;
 }
 
 /* footer */

@@ -16,6 +16,14 @@ class UserController extends Controller
         return view('login');
     }
 
+    public function showhistorydetailPage(){
+        return view('historydetail');
+    }
+
+    public function showHistoryPage(){
+        return view('history');
+    }
+
     public function signin(Request $request){
         $this->validate($request, [
             'username' => 'required',
