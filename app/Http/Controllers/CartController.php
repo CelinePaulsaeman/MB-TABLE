@@ -36,7 +36,7 @@ class CartController extends Controller
             'user_id' => Auth::user()->id,
             'date' => now(),
             'time' => $cart->time,
-            'totalprice' => $cart->totalprice,
+            'totalprice' => $cart->totalprice + 15000,
             'tablenumber' => $cart->tablenumber,
             'totaltables' => $cart->totaltables,
             'paymentmethod' => $request->paymentmethod,

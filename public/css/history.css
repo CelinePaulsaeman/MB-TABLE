@@ -1,18 +1,24 @@
+.history-page-container {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
 .card{
     display: flex;
     align-items: center;
-    margin: 100px;
+    margin: 15px 150px;
     border-radius: 10px;
     background: white;
     box-shadow: 2px 4px 10px #333;
     position: relative;
 }
 .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     box-shadow: 1px 1px 3px #333;
 }
 .text{
-    padding:5%;
+    padding: 3%;
     width: 40vw;
 }
 

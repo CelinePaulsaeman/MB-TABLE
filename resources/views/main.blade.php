@@ -13,7 +13,7 @@
     {{-- header --}}
     <header>
         <div id="menu-bar" class="fas fa-bars"></div>
-        <a href="/home" class="logo"><span>MB</span>-TABLE</a>
+        <a href="/" class="logo"><span>MB</span>-TABLE</a>
 
         <nav class="navbar">
             <a href="/">Home</a>

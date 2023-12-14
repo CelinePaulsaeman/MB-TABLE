@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\History;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
@@ -16,12 +17,14 @@ class UserController extends Controller
         return view('login');
     }
 
-    public function showhistorydetailPage(){
-        return view('historydetail');
+    public function showhistorydetailPage(Request $request){
+        $history = History::find($request->route('id'));
+        return view('historydetail')->with('history', $history);
     }
 
     public function showHistoryPage(){
-        return view('history');
+        $histories = History::all();
+        return view('history')->with('histories', $histories);
     }
 
     public function signin(Request $request){

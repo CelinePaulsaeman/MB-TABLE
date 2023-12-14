@@ -5,19 +5,23 @@
 @stop
 
 @section('content')
-    <div class="card">
-        <div class="image">
-            <img src="{{url('storage/img/hexa.jpg')}}" alt="">
-        </div>
-        <div class="text">
-            <span class="date">20-12-2023</span>
-            <h2>Nama BL</h2>
-            <p>Table 3</p>
-        </div>
+    <div class="history-page-container">
+        @foreach($histories as $history)
+            <div class="card">
+                <div class="image">
+                    <img src="{{asset('storage/img/billiard/mainPicture/'.$history->billiard->mainpic)}}" alt="">
+                </div>
+                <div class="text">
+                    <span class="date">{{ $history->date }}</span>
+                    <h2>{{ $history->billiard->name }}</h2>
+                    <p>Table {{ $history->tablenumber }}</p>
+                </div>
 
-        <div class="right">
-            <div class="price">Rp. 100.000,00</div>
-            <a class="detail" href="/historydetail">View Detail</a>
-        </div>
+                <div class="right">
+                    <div class="price">Rp. {{ $history->totalprice }},00</div>
+                    <a class="detail" href="{{url('historyDetail/'.$history->id)}}">View Detail</a>
+                </div>
+            </div>
+        @endforeach
     </div>
 @stop
