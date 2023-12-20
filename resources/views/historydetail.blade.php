@@ -26,6 +26,7 @@
             <p>Date: <span>{{ $history->date }}</span></p>
             <p>Time: <span>{{ $history->time }}</span></p>
             <p>Table: <span>{{ $history->tablenumber }}</span></p>
+            <p>Payment Method: <span>{{ $history->paymentmethod }}</span></p>
         </div>
 
         <div class="total-price">
